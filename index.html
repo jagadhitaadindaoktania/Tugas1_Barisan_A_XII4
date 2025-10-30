@@ -3,114 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akademi Pelangi Bintang | Sekolah Modern & Inovatif</title>
+    <title>Sekolah Bintang Ceria | Inovasi & Inspirasi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="container nav-container">
-            <div class="logo">Akademi Pelangi Bintang ⭐</div>
-            <nav>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">Bintang Ceria ✨</div>
+            <nav class="main-nav">
                 <ul class="nav-links">
-                    <li><a href="#profil">Profil</a></li>
-                    <li><a href="#jurusan">Program Studi</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#program">Program</a></li>
                     <li><a href="#galeri">Galeri</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
-                    <li><a href="#kontak" class="nav-cta">Daftar Sekarang</a></li>
+                    <li><a href="#kontak" class="nav-cta-btn">Daftar</a></li>
                 </ul>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <section class="hero-section">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Membentuk Pemimpin Masa Depan dengan Warna Ceria</h1>
-                <p>Kurikulum terintegrasi yang memadukan keunggulan akademis, seni, dan teknologi dalam lingkungan yang penuh inspirasi.</p>
-                <a href="#kontak" class="cta-button primary-cta">Gabung Sekarang!</a>
-                <a href="#profil" class="cta-button secondary-cta">Lihat Profil Sekolah</a>
+        <div class="container hero-inner">
+            <div class="hero-text-area">
+                <h1>Wujudkan Potensi Terbaik Anak Anda!</h1>
+                <p class="hero-tagline">Temukan lingkungan belajar yang interaktif, suportif, dan penuh warna di Sekolah Bintang Ceria.</p>
+                <div class="hero-ctas">
+                    <a href="#kontak" class="btn primary-btn">Gabung Sekarang!</a>
+                    <a href="#program" class="btn secondary-btn">Jelajahi Program</a>
+                </div>
             </div>
-            <div class="hero-image-placeholder">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Ruang Inovasi Pembelajaran</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats-strip">
-        <div class="container">
-            <div class="stat-item">
-                <h3>500+</h3>
-                <p>Siswa Berprestasi</p>
-            </div>
-            <div class="stat-item">
-                <h3>95%</h3>
-                <p>Lulusan Diterima di PTN Favorit</p>
-            </div>
-            <div class="stat-item">
-                <h3>15</h3>
-                <p>Ekstrakurikuler Pilihan</p>
+            <div class="hero-visual">
+                <i class="fas fa-child fa-5x"></i>
+                <span>Masa Depan Cerah Dimulai Di Sini</span>
             </div>
         </div>
     </section>
 
-    <section id="jurusan" class="section program-section">
+    <section id="tentang" class="section about-section">
         <div class="container">
-            <h2>Program Studi Unggulan</h2>
-            <div class="card-grid">
-                <div class="program-card pink-border">
-                    <i class="fas fa-flask"></i>
+            <h2>Mengapa Memilih Bintang Ceria?</h2>
+            <div class="about-grid">
+                <div class="about-item card effect-shadow-pink">
+                    <i class="fas fa-lightbulb icon-pink"></i>
+                    <h3>Kurikulum Inovatif</h3>
+                    <p>Pembelajaran berbasis eksplorasi dan proyek untuk merangsang kreativitas.</p>
+                </div>
+                <div class="about-item card effect-shadow-purple">
+                    <i class="fas fa-users icon-purple"></i>
+                    <h3>Komunitas Aktif</h3>
+                    <p>Lingkungan yang mendukung pertumbuhan sosial dan emosional siswa.</p>
+                </div>
+                <div class="about-item card effect-shadow-red">
+                    <i class="fas fa-award icon-red"></i>
+                    <h3>Prestasi Gemilang</h3>
+                    <p>Membentuk siswa berkarakter dan berprestasi di berbagai bidang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="program" class="section program-section bg-purple">
+        <div class="container">
+            <h2>Program Unggulan Kami</h2>
+            <div class="program-grid">
+                <div class="program-card program-card-pink">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Seni & Kreativitas</h3>
+                    <p>Mengembangkan bakat seni rupa, musik, dan tari.</p>
+                </div>
+                <div class="program-card program-card-white">
+                    <i class="fas fa-robot"></i>
                     <h3>Sains & Teknologi</h3>
-                    <p>Fokus pada riset, robotika, dan inovasi digital.</p>
+                    <p>Mengenalkan dasar robotika, coding, dan inovasi digital.</p>
                 </div>
-                <div class="program-card purple-border">
-                    <i class="fas fa-palette"></i>
-                    <h3>Seni & Desain Kreatif</h3>
-                    <p>Pengembangan bakat di bidang visual, musik, dan pertunjukan.</p>
-                </div>
-                <div class="program-card red-border">
-                    <i class="fas fa-users"></i>
-                    <h3>Ilmu Sosial & Bahasa</h3>
-                    <p>Pembelajaran interaktif untuk kepemimpinan dan komunikasi global.</p>
+                <div class="program-card program-card-red">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Literasi & Bahasa</h3>
+                    <p>Meningkatkan kemampuan membaca, menulis, dan berbicara multi-bahasa.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimoni" class="section testimonial-section">
+    <section id="galeri" class="section gallery-section">
         <div class="container">
-            <h2>Apa Kata Mereka?</h2>
-            <div class="testimonial-card">
-                <p>"Anak saya tumbuh menjadi pribadi yang percaya diri dan bersemangat. Lingkungan yang **penuh warna dan suportif** adalah kunci!"</p>
-                <cite>— Ibu Risa A., Orang Tua Siswa Kelas X</cite>
+            <h2>Momen Ceria Kami</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item placeholder-pink"><span>Eksplorasi Alam</span></div>
+                <div class="gallery-item placeholder-purple"><span>Workshop Robotik</span></div>
+                <div class="gallery-item placeholder-red"><span>Pentas Seni</span></div>
+                <div class="gallery-item placeholder-white"><span>Belajar Kelompok</span></div>
             </div>
+            <a href="#" class="btn primary-btn-red view-more-btn">Lihat Galeri Lengkap</a>
         </div>
     </section>
-    
-    <section id="kontak" class="section register-section">
-        <div class="container register-grid">
-            <div class="register-info">
-                <h2>Siap Bergabung?</h2>
-                <p>Pendaftaran Tahun Ajaran 2025/2026 telah dibuka. Jadwalkan kunjungan Anda sekarang!</p>
+
+    <section id="testimoni" class="section testimonial-section bg-pink">
+        <div class="container">
+            <h2>Apa Kata Orang Tua?</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide card effect-shadow-white">
+                    <p>"Sekolah Bintang Ceria bukan hanya tempat belajar, tapi rumah kedua bagi anak saya. Perkembangannya sangat pesat!"</p>
+                    <cite>— Ibu Lina, Orang Tua Siswa Kelas V</cite>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Mari Bergabung!</h2>
+                <p>Pendaftaran untuk tahun ajaran baru telah dibuka. Jangan lewatkan kesempatan ini!</p>
                 <ul>
-                    <li><i class="fas fa-check-circle"></i> Kuota Terbatas</li>
-                    <li><i class="fas fa-check-circle"></i> Beasiswa Tersedia</li>
-                    <li><i class="fas fa-check-circle"></i> Tur Kampus Virtual</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Pendidikan Ceria No. 123, Kota Bintang</li>
+                    <li><i class="fas fa-phone"></i> (021) 876-5432</li>
+                    <li><i class="fas fa-envelope"></i> info@bintangceria.id</li>
                 </ul>
             </div>
-            <div class="register-form-placeholder">
-                <i class="fas fa-file-alt"></i>
-                <p>Tempat Formulir Pendaftaran Singkat</p>
-                <a href="#" class="cta-button primary-cta-red">Isi Formulir Online</a>
+            <div class="contact-form card effect-shadow-purple">
+                <h3>Ajukan Pertanyaan</h3>
+                <form>
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda..." rows="4"></textarea>
+                    <button type="submit" class="btn primary-btn-red">Kirim Pesan</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2024 Akademi Pelangi Bintang. Pendidikan Ceria untuk Masa Depan Gemilang.</p>
+            <p>&copy; 2024 Sekolah Bintang Ceria. Semua Hak Dilindungi.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
