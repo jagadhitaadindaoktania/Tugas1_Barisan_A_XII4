@@ -1,153 +1,115 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekolah Bintang Ceria | Inovasi & Inspirasi</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDN Cahaya Bangsa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container header-content">
-            <div class="logo">Bintang Ceria ✨</div>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="#tentang">Tentang</a></li>
-                    <li><a href="#program">Program</a></li>
-                    <li><a href="#galeri">Galeri</a></li>
-                    <li><a href="#testimoni">Testimoni</a></li>
-                    <li><a href="#kontak" class="nav-cta-btn">Daftar</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1 class="logo">SDN Cahaya Bangsa</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#programs">Program</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero-section">
-        <div class="container hero-inner">
-            <div class="hero-text-area">
-                <h1>Wujudkan Potensi Terbaik Anak Anda!</h1>
-                <p class="hero-tagline">Temukan lingkungan belajar yang interaktif, suportif, dan penuh warna di Sekolah Bintang Ceria.</p>
-                <div class="hero-ctas">
-                    <a href="#kontak" class="btn primary-btn">Gabung Sekarang!</a>
-                    <a href="#program" class="btn secondary-btn">Jelajahi Program</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <i class="fas fa-child fa-5x"></i>
-                <span>Masa Depan Cerah Dimulai Di Sini</span>
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Mendidik dengan Cinta dan Prestasi</h2>
+        <p>Sekolah yang berfokus pada pembentukan karakter, kreativitas, dan prestasi siswa dalam lingkungan belajar yang nyaman dan modern.</p>
+        <a href="#contact" class="btn">Daftar Sekarang</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x350?text=Foto+Sekolah" alt="Foto sekolah">
+      </div>
+    </div>
+  </section>
 
-    <section id="tentang" class="section about-section">
-        <div class="container">
-            <h2>Mengapa Memilih Bintang Ceria?</h2>
-            <div class="about-grid">
-                <div class="about-item card effect-shadow-pink">
-                    <i class="fas fa-lightbulb icon-pink"></i>
-                    <h3>Kurikulum Inovatif</h3>
-                    <p>Pembelajaran berbasis eksplorasi dan proyek untuk merangsang kreativitas.</p>
-                </div>
-                <div class="about-item card effect-shadow-purple">
-                    <i class="fas fa-users icon-purple"></i>
-                    <h3>Komunitas Aktif</h3>
-                    <p>Lingkungan yang mendukung pertumbuhan sosial dan emosional siswa.</p>
-                </div>
-                <div class="about-item card effect-shadow-red">
-                    <i class="fas fa-award icon-red"></i>
-                    <h3>Prestasi Gemilang</h3>
-                    <p>Membentuk siswa berkarakter dan berprestasi di berbagai bidang.</p>
-                </div>
-            </div>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>SDN Cahaya Bangsa adalah sekolah dasar yang berdedikasi mencetak generasi cerdas dan berakhlak mulia. Dengan fasilitas modern, pengajar berpengalaman, dan kurikulum yang inovatif.</p>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Fasilitas Lengkap</h3>
+          <p>Laboratorium sains, komputer, ruang musik, dan lapangan olahraga modern.</p>
         </div>
-    </section>
+        <div class="feature-box">
+          <h3>Guru Profesional</h3>
+          <p>Tenaga pengajar bersertifikat dan berdedikasi untuk setiap siswa.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Lingkungan Nyaman</h3>
+          <p>Area belajar bersih, asri, dan mendukung tumbuh kembang anak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="program" class="section program-section bg-purple">
-        <div class="container">
-            <h2>Program Unggulan Kami</h2>
-            <div class="program-grid">
-                <div class="program-card program-card-pink">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Seni & Kreativitas</h3>
-                    <p>Mengembangkan bakat seni rupa, musik, dan tari.</p>
-                </div>
-                <div class="program-card program-card-white">
-                    <i class="fas fa-robot"></i>
-                    <h3>Sains & Teknologi</h3>
-                    <p>Mengenalkan dasar robotika, coding, dan inovasi digital.</p>
-                </div>
-                <div class="program-card program-card-red">
-                    <i class="fas fa-book-reader"></i>
-                    <h3>Literasi & Bahasa</h3>
-                    <p>Meningkatkan kemampuan membaca, menulis, dan berbicara multi-bahasa.</p>
-                </div>
-            </div>
+  <!-- PROGRAMS SECTION -->
+  <section id="programs" class="programs">
+    <div class="container">
+      <h2>Program Unggulan</h2>
+      <div class="program-list">
+        <div class="program-item">
+          <h3>Program Bilingual</h3>
+          <p>Pembelajaran dengan Bahasa Indonesia dan Inggris untuk meningkatkan kemampuan komunikasi global.</p>
         </div>
-    </section>
+        <div class="program-item">
+          <h3>STEM & Coding</h3>
+          <p>Program sains, teknologi, dan pemrograman dasar untuk anak-anak.</p>
+        </div>
+        <div class="program-item">
+          <h3>Ekstrakurikuler</h3>
+          <p>Kegiatan seni, musik, tari, dan olahraga untuk mengembangkan bakat siswa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="galeri" class="section gallery-section">
-        <div class="container">
-            <h2>Momen Ceria Kami</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item placeholder-pink"><span>Eksplorasi Alam</span></div>
-                <div class="gallery-item placeholder-purple"><span>Workshop Robotik</span></div>
-                <div class="gallery-item placeholder-red"><span>Pentas Seni</span></div>
-                <div class="gallery-item placeholder-white"><span>Belajar Kelompok</span></div>
-            </div>
-            <a href="#" class="btn primary-btn-red view-more-btn">Lihat Galeri Lengkap</a>
-        </div>
-    </section>
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Galeri Kegiatan</h2>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300x200?text=Kegiatan+1" alt="Kegiatan 1">
+        <img src="https://via.placeholder.com/300x200?text=Kegiatan+2" alt="Kegiatan 2">
+        <img src="https://via.placeholder.com/300x200?text=Kegiatan+3" alt="Kegiatan 3">
+        <img src="https://via.placeholder.com/300x200?text=Kegiatan+4" alt="Kegiatan 4">
+      </div>
+    </div>
+  </section>
 
-    <section id="testimoni" class="section testimonial-section bg-pink">
-        <div class="container">
-            <h2>Apa Kata Orang Tua?</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide card effect-shadow-white">
-                    <p>"Sekolah Bintang Ceria bukan hanya tempat belajar, tapi rumah kedua bagi anak saya. Perkembangannya sangat pesat!"</p>
-                    <cite>— Ibu Lina, Orang Tua Siswa Kelas V</cite>
-                </div>
-                </div>
-        </div>
-    </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak Kami</h2>
+      <form>
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan" rows="4" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
 
-    <section id="kontak" class="section contact-section">
-        <div class="container contact-grid">
-            <div class="contact-info">
-                <h2>Mari Bergabung!</h2>
-                <p>Pendaftaran untuk tahun ajaran baru telah dibuka. Jangan lewatkan kesempatan ini!</p>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Jl. Pendidikan Ceria No. 123, Kota Bintang</li>
-                    <li><i class="fas fa-phone"></i> (021) 876-5432</li>
-                    <li><i class="fas fa-envelope"></i> info@bintangceria.id</li>
-                </ul>
-            </div>
-            <div class="contact-form card effect-shadow-purple">
-                <h3>Ajukan Pertanyaan</h3>
-                <form>
-                    <input type="text" placeholder="Nama Lengkap" required>
-                    <input type="email" placeholder="Email Anda" required>
-                    <textarea placeholder="Pesan Anda..." rows="4"></textarea>
-                    <button type="submit" class="btn primary-btn-red">Kirim Pesan</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Sekolah Bintang Ceria. Semua Hak Dilindungi.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 SDN Cahaya Bangsa. Semua Hak Dilindungi.</p>
+  </footer>
 
 </body>
 </html>
