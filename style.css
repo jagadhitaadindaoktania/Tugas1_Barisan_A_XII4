@@ -1,15 +1,17 @@
 /* Variabel Warna */
 :root {
-    --pink: hsl(330, 80%, 70%); /* Merah muda cerah */
-    --purple: hsl(270, 60%, 50%); /* Ungu sedang */
-    --red: hsl(0, 70%, 50%); /* Merah dasar */
+    --pink: hsl(330, 80%, 70%);     /* Merah muda cerah */
+    --purple: hsl(270, 60%, 50%);   /* Ungu sedang */
+    --red: hsl(0, 70%, 50%);        /* Merah dasar */
     --white: hsl(0, 0%, 100%);
-    --dark-text: hsl(0, 0%, 20%);
+    --dark-text: hsl(270, 10%, 20%); /* Ungu gelap untuk teks utama */
+    --light-gray: hsl(0, 0%, 95%);
+    --gradient: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
 }
 
-/* Pengaturan Dasar */
+/* Reset dan Pengaturan Dasar */
 body {
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: var(--dark-text);
@@ -17,115 +19,349 @@ body {
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
-/* Header/Hero Section */
-.hero {
-    background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%); /* Gradien Ungu ke Pink */
-    color: var(--white);
-    text-align: center;
-    padding: 80px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Header dan Navigasi */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
-.hero p {
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--dark-text);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+.nav-cta {
+    background-color: var(--pink);
+    color: var(--white) !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-cta:hover {
+    background-color: var(--purple) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--light-gray); /* Latar belakang abu muda */
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    color: var(--purple);
+    margin-top: 0;
+}
+
+.hero-text p {
     font-size: 1.2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 30px;
 }
 
-/* Tombol CTA (Call to Action) */
+.hero-image-placeholder {
+    flex: 1;
+    min-height: 350px;
+    background: var(--gradient); /* Gradien Ungu-Pink */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image-placeholder .fas {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+/* Tombol CTA */
 .cta-button {
     display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.primary-cta {
     background-color: var(--red);
     color: var(--white);
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
     border: 2px solid var(--red);
 }
 
-.cta-button:hover {
+.primary-cta:hover {
     background-color: var(--white);
     color: var(--red);
 }
 
-.primary-cta {
-    background-color: var(--white);
+.secondary-cta {
+    background-color: transparent;
     color: var(--purple);
-    border-color: var(--white);
+    border: 2px solid var(--purple);
 }
 
-.primary-cta:hover {
+.secondary-cta:hover {
     background-color: var(--purple);
     color: var(--white);
-    border-color: var(--purple);
 }
 
-/* Section Styling */
+/* Section Stats Strip */
+.stats-strip {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+.stats-strip .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.stat-item p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Section Dasar */
 .section {
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .section h2 {
+    font-size: 2.2em;
     color: var(--purple);
-    font-size: 2.5em;
-    margin-bottom: 1em;
+    margin-bottom: 40px;
 }
 
-.content-box {
-    background-color: var(--pink);
-    color: var(--dark-text);
+/* Program Section */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.program-card {
+    background-color: var(--white);
     padding: 30px;
     border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    border-top: 5px solid;
 }
 
-.content-box ul {
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.program-card .fas {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.pink-border { border-color: var(--pink); }
+.pink-border .fas { color: var(--pink); }
+
+.purple-border { border-color: var(--purple); }
+.purple-border .fas { color: var(--purple); }
+
+.red-border { border-color: var(--red); }
+.red-border .fas { color: var(--red); }
+
+.program-card h3 {
+    margin-top: 0;
+    color: var(--dark-text);
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: var(--pink); /* Latar belakang Pink */
+    color: var(--dark-text);
+}
+
+.testimonial-section h2 {
+    color: var(--white);
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.testimonial-card cite {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+/* Register Section (Kontak) */
+.register-section {
+    background-color: var(--white);
+}
+
+.register-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.register-info {
+    flex: 1;
+}
+
+.register-info h2 {
+    color: var(--red);
+    margin-bottom: 15px;
+}
+
+.register-info ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
+}
+
+.register-info li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.register-info .fas {
+    color: var(--purple);
+    margin-right: 10px;
+}
+
+.register-form-placeholder {
+    flex: 1;
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px dashed var(--purple);
+}
+
+.register-form-placeholder .fas {
+    font-size: 3em;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.primary-cta-red { /* Tombol khusus di sini */
+    background-color: var(--red);
+    color: var(--white);
     margin-top: 15px;
+    border: 2px solid var(--red);
 }
-
-.content-box li {
-    padding: 5px 0;
-    font-weight: bold;
-}
-
-/* Section Berwarna */
-.colored-bg {
+.primary-cta-red:hover {
     background-color: var(--purple);
-    color: var(--white);
-}
-
-.colored-bg h2 {
-    color: var(--white);
-}
-
-.colored-bg p {
-    margin-bottom: 2em;
+    border-color: var(--purple);
 }
 
 /* Footer */
 footer {
-    background-color: var(--red);
+    background-color: var(--purple);
     color: var(--white);
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0;
     font-size: 0.9em;
+}
+
+/* Responsif Dasar */
+@media (max-width: 992px) {
+    .hero-content, .register-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-image-placeholder, .register-info, .register-form-placeholder {
+        flex: none;
+        width: 100%;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-links {
+        display: none; /* Sederhanakan navigasi untuk mobile */
+    }
+    .nav-container {
+        justify-content: center;
+    }
+    .stats-strip .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .stat-item {
+        width: 45%;
+    }
 }
